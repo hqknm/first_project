@@ -7,7 +7,7 @@ def generate_password(lenght=12):
      # Генерация пароля нужной длины
     password = ''.join(random.choice(all_chars) for _ in range(lenght))
     return password
-
+if __name__ == '__main__':
 # Пример использования
 password = generate_password(12)
 print("Сгенерированный пароль:" , password)
